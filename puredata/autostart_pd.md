@@ -12,14 +12,17 @@ Disclaimer: I don't understand <i>why</i> this works :)
 <li>create a pd startup script: <code>sudo nano pd_startup</code> 
 </li>
 
-<li>add this line <code>pd /home/pi/Documents/pd/mainpatch.pd &</code> <br/>
-then ctrl+x and "y" then enter to save and quit nano.</li>
+<li>add this line <code>pd /home/pi/Documents/pd/mainpatch.pd &</code></li> <br/>
+then ctrl+x and "y" then enter to save and quit nano.
 
 <li>then <code>sudo nano /etc/profile</code> <br/>
 
 add this at the end of the file: <br/>
 <code>/home/pi/bin/pd_startup</code>
 </li>
+then ctrl+x and "y" then enter to save and quit nano.
+
+
 
 <br/>
 then reboot. your pd patch should be there running.
