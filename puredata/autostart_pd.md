@@ -14,6 +14,7 @@ Disclaimer: I don't understand <i>why</i> this works :)
 
 <li>add this line <code>pd /home/pi/Documents/pd/mainpatch.pd &</code></li> <br/>
 then ctrl+x and "y" then enter to save and quit nano.
+<li>make the script executable: sudo chmod 755 pd_startup</li>
 
 <li>then <code>sudo nano /etc/profile</code> <br/>
 
@@ -22,7 +23,7 @@ add this at the end of the file: <br/>
 </li>
 then ctrl+x and "y" then enter to save and quit nano.
 
-
+</ul>
 
 <br/>
 then reboot. your pd patch should be there running.
