@@ -14,7 +14,8 @@ Disclaimer: I don't understand <i>why</i> this works :)
 
 <li>add this line <code>pd /home/pi/Documents/pd/mainpatch.pd &</code></li> <br/>
 then ctrl+x and "y" then enter to save and quit nano.
-<li>make the script executable: sudo chmod 755 pd_startup</li>
+<br/>
+<li>make the script executable:<code>sudo chmod 755 pd_startup</code></li>
 
 <li>then <code>sudo nano /etc/profile</code> <br/>
 
