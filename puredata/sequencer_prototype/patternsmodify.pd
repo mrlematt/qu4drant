@@ -1,0 +1,17 @@
+#N canvas 522 22 1679 724 10;
+#X obj 32 478 s sldrr0;
+#X obj 139 479 s sldrr1;
+#X obj 238 478 s sldrr2;
+#X obj 353 478 s sldrr3;
+#X obj 503 481 s sldrr4;
+#X obj 619 480 s sldrr5;
+#X obj 733 482 s sldrr6;
+#X obj 863 482 s sldrr7;
+#X obj 31 541 s sldrr8;
+#X obj 153 543 s sldrr9;
+#X obj 248 544 s sldrr10;
+#X obj 387 544 s sldrr11;
+#X obj 499 544 s sldrr12;
+#X obj 608 545 s sldrr13;
+#X obj 737 541 s sldrr14;
+#X obj 847 542 s sldrr15;
