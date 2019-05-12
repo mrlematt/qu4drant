@@ -1,0 +1,27 @@
+#N canvas 128 23 928 715 10;
+#X obj 141 97 until;
+#X msg 141 55 16;
+#X obj 135 157 mcounter 16;
+#X obj 133 187 t b f f;
+#X obj 152 222 sel 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
+#X obj 104 344 t f b;
+#X msg 131 369 0;
+#X obj 105 313 100;
+#X obj 60 421 s towriteprst-\$1;
+#X obj 95 395 s towriteindex-\$1;
+#X obj 577 158 r towriteprst-\$1;
+#X obj 685 158 r towriteindex-\$1;
+#X obj 606 219 outlet;
+#X obj 685 220 outlet;
+#X text 600 342 making the main snare hits here deciding between several
+snare pattern types;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 1 4 0;
+#X connect 5 0 8 0;
+#X connect 5 1 6 0;
+#X connect 6 0 9 0;
+#X connect 7 0 5 0;
+#X connect 10 0 12 0;
+#X connect 11 0 13 0;

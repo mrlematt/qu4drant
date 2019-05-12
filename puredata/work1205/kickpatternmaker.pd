@@ -1,0 +1,37 @@
+#N canvas 93 50 928 715 10;
+#X obj 609 149 outlet;
+#X obj 688 150 outlet;
+#X obj 580 88 r towriteprst-\$0;
+#X obj 688 88 r towriteindex-\$0;
+#X obj 629 203 tabwrite kicklivetest;
+#X obj 575 49 array define -yrange 0 100 kicklivetest 16;
+#X obj 57 299 kicktechnopattern;
+#X obj 47 341 s towriteprst-\$0;
+#X obj 155 342 s towriteindex-\$0;
+#X obj 83 99 decide3;
+#X text 196 36 bang in > choose between several flavors of kick patterns
+;
+#X obj 78 27 inlet;
+#X obj 36 205 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 285 301 slowhalfkickpattern;
+#X obj 286 344 s towriteprst-\$0;
+#X obj 394 345 s towriteindex-\$0;
+#X obj 290 214 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 203 115 decide;
+#X obj 189 85 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 2 0 0 0;
+#X connect 2 0 4 0;
+#X connect 3 0 1 0;
+#X connect 3 0 4 1;
+#X connect 6 0 7 0;
+#X connect 6 1 8 0;
+#X connect 12 0 6 0;
+#X connect 13 0 14 0;
+#X connect 13 1 15 0;
+#X connect 16 0 13 0;
+#X connect 17 0 12 0;
+#X connect 17 1 16 0;
+#X connect 18 0 17 0;
