@@ -33,10 +33,10 @@ then ctrl+x and "y" then enter to save and quit nano.
 </ul>
 
 <br/>
-then reboot. your pd patch should be there running.
+then reboot. your pd patch should be there running. midi should be received from the teensy into pure data.
 <br/>
 
-<h3>method 2</h3>
+<h3>method 2 - untested</h3>
 
 <ul>
   <li>open terminal <code> sudo nano pdstartup.sh</code> creates an empty script</li>
