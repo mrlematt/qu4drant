@@ -1,4 +1,0 @@
-#N canvas 676 251 450 300 10;
-#X obj 170 107 r \$0-getpreset;
-#X obj 170 155 outlet;
-#X connect 0 0 1 0;
