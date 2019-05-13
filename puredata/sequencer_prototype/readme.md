@@ -1,6 +1,6 @@
 <h1>sequencer prototype</h1>
 
-<b>mainpatch.pd</b> is the patch to open.
+<b>mainpatchA.pd</b> is the patch to open for the interface A, then B for the interface B and so on...
 note: you have to install the abl_link~ object to get the synchro.
 
 here is the main sequencer prototype...
