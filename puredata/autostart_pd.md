@@ -30,6 +30,27 @@ then ctrl+x and "y" then enter to save and quit nano.
 
 <br/>
 then reboot. your pd patch should be there running.
+<br/>
+
+<h3>method 2</h3>
+
+<ul>
+  <li>open terminal <code> sudo nano pdstartup.sh</code> creates an empty script</li>
+  <li>type <code>#!/bin/bash</code></li>
+  <li>type <code>/home/pi/Desktop/mypatch.pd</code> with the path to your patch</li>
+  <li>ctrl + X, then Y, then enter</li>
+  <li>open terminal <code>sudo chmod +x monpatch.pd</code></li>
+  <br/>
+  you just created a script launching your patch. congrats.
+  
+  <li>open terminal<code>sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart</code></li>
+  <li>go to last line, type <code>@sh /home/pi/pdstartup.sh</code></li>
+  <li>ctrl + X, Y and enter</li>
+  <li>do a reboot</li>
+  
+  
+  
+</ul>
 
 
 
