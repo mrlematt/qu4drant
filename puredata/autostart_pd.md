@@ -12,7 +12,9 @@ Disclaimer: I don't understand <i>why</i> this works :)
 <li>create a pd startup script: <code>sudo nano pd_startup</code> 
 </li>
 
-<li>add those lines <code>pd -alsamidi -midiindev 1 /home/pi/Documents/pd/mainpatch.pd & sleep 5</code><br/>
+<li>add those lines <br/>
+  <code>pd -alsamidi -midiindev 1 /home/pi/Documents/pd/mainpatch.pd & sleep 5</code>
+  <br/>
   <code>aconnect 'Teensy MIDI:0' 'Pure Data:0' & sleep 5 </code>
 </li>
 
