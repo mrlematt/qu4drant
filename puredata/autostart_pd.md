@@ -42,6 +42,7 @@ then reboot. your pd patch should be there running.
   <li>open terminal <code>sudo chmod +x monpatch.pd</code></li>
   <br/>
   you just created a script launching your patch. congrats.
+  <br/>
   
   <li>open terminal<code>sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart</code></li>
   <li>go to last line, type <code>@sh /home/pi/pdstartup.sh</code></li>
