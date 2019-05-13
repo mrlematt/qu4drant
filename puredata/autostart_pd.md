@@ -39,7 +39,7 @@ then reboot. your pd patch should be there running.
   <li>type <code>#!/bin/bash</code></li>
   <li>type <code>/home/pi/Desktop/mypatch.pd</code> with the path to your patch</li>
   <li>ctrl + X, then Y, then enter</li>
-  <li>open terminal <code>sudo chmod +x monpatch.pd</code></li>
+  <li>open terminal <code>sudo chmod +x mypatch.pd</code></li>
   <br/>
   you just created a script launching your patch. congrats.
   <br/>
