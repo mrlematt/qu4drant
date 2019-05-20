@@ -4,7 +4,7 @@ I struggled to find a clean way to launch pd on startup.<br/>
 
 Disclaimer: I don't understand <i>why</i> this works :) 
 
-<h3>method 1 (tested - works)</h3>
+<h3>method 1 (tested - worked on one raspi... but failed on the last ones because LXDE was killing PD on startup)</h3>
 
 <ul>
 <li>create the <code>/bin</code> folder. <code>mkdir ./</code></li>
@@ -36,22 +36,27 @@ then ctrl+x and "y" then enter to save and quit nano.
 then reboot. your pd patch should be there running. midi should be received from the teensy into pure data.
 <br/>
 
-<h3>method 2 - untested</h3>
+<h3>method 2 - tested</h3>
 
 <ul>
   <li>open terminal <code> sudo nano pdstartup.sh</code> creates an empty script</li>
   <li>type <code>#!/bin/bash</code></li>
-  <li>type <code>/home/pi/Desktop/mypatch.pd</code> with the path to your patch</li>
+  <li>type <code>pd -alsamidi -midiindev 1 /home/pi/Documents/pd/mainpatch.pd & sleep 5</code>
+  <br/>
+  <code>aconnect 'Teensy MIDI:0' 'Pure Data:0' & sleep 5 </code></li>
   <li>ctrl + X, then Y, then enter</li>
   <li>open terminal <code>sudo chmod +x mypatch.pd</code></li>
   <br/>
-  you just created a script launching your patch. congrats.
+  you just created a script launching your patch.
   <br/>
   
-  <li>open terminal<code>sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart</code></li>
+  <li>open terminal<code>sudo nano /etc/xdg/lxsession/LXDE-pi/autostart</code></li>
   <li>go to last line, type <code>@sh /home/pi/pdstartup.sh</code></li>
   <li>ctrl + X, Y and enter</li>
   <li>do a reboot</li>
+  it should launch the patch, initialize the midi stuff.
+  <br/>
+  <b>problem:</b> as soon as you touch the pd window, it kills the pd app...
   
   
   
