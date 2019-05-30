@@ -41,7 +41,7 @@ then reboot. your pd patch should be there running. midi should be received from
 <ul>
   <li>open terminal <code> sudo nano pdstartup.sh</code> creates an empty script</li>
   <li>type <code>#!/bin/bash</code></li>
-  <li>type <code>pd -alsamidi -midiindev 1 /home/pi/Documents/pd/mainpatch.pd & sleep 5</code>
+  <li>type <code>sleep 10</code> <br/><code>pd -alsamidi -midiindev 1 /home/pi/Documents/pd/mainpatch.pd & sleep 5</code>
   <br/>
   <code>aconnect 'Teensy MIDI:0' 'Pure Data:0' & sleep 5 </code></li>
   <li>ctrl + X, then Y, then enter</li>
