@@ -57,7 +57,8 @@ then reboot. your pd patch should be there running. midi should be received from
   it should launch the patch, initialize the midi stuff.
   <br/>
   <b>problem:</b> as soon as you touch the pd window, it kills the pd app... it may be related to dsp priority stuff.
-  to try: 
+  <b>to try: </b><br/>
+  
   <a>The priority message you get has to do with the priority Pd is trying to get and the actual priority it does get from the kernel. You haven't specified the priority, so try to do that.</a>
 <a>First of all add user pi to the audio group by writing this to a terminal:</a>
 
