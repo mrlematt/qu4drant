@@ -56,10 +56,24 @@ then reboot. your pd patch should be there running. midi should be received from
   <li>do a reboot</li>
   it should launch the patch, initialize the midi stuff.
   <br/>
-  <b>problem:</b> as soon as you touch the pd window, it kills the pd app...
+  <b>problem:</b> as soon as you touch the pd window, it kills the pd app... it may be related to dsp priority stuff.
+  to try: 
+  <a>The priority message you get has to do with the priority Pd is trying to get and the actual priority it does get from the kernel. You haven't specified the priority, so try to do that.</a>
+<a>First of all add user pi to the audio group by writing this to a terminal:</a>
+
+<code>sudo usermod -a -G audio pi</code>
+Then edit the /etc/security/limits.conf file by typing:
+<code>sudo nano /etc/security/limits.conf</code>
+The file will open in the nano editor (inside the terminal). 
+Navigate to the end of it with the arrow keys and add the following:
+<code>@audio - rtprio 95
+@audio - memlock unlimited </code>
+Optionally add the following line too:
+<code>@audio - nice -19</code>
+
+Try launching Pd again. You shouldn't launch Pd with sudo, but as user pi. You should just set your system so that the user pi can get the desired priority.
   
-  
-  
+ 
 </ul>
 
 
