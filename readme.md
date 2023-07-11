@@ -1,4 +1,4 @@
-<h1>Qu4drant</h1>
+<h1>Qu4drant V1</h1>
 
 quadrant is a sound and light installation.
 <i>I worked on the Pure Data, Teensy programming part.
